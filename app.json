@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "example/index",
+    "example/other/other",
+    "example/index-list/index-list",
+    "example/tabs/tabs",
+    "example/vtabs/vtabs",
+    "example/sticky/sticky",
+    "example/select-text/select-text"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "鑫诺卫星",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "backgroundColor": "#f8f8f8"
+  },
+
+  "tabBar": {
+    "color": "#82858b",
+    "selectedColor": "#157efb",
+    "list": [
+      {
+        "pagePath": "example/index",
+        "text": "首页",
+        "iconPath": "example/images/calculator_menu_normal.png",
+        "selectedIconPath": "example/images/calculator_menu_pressed.png"
+      },
+      {
+        "pagePath": "example/index",
+        "text": "关于",
+        "iconPath": "example/images/record_menu_normal.png",
+        "selectedIconPath": "example/images/record_menu_pressed.png"
+      }
+    ]
+  },
+  "debug": true,
+  "style": "v2",
+  "sitemapLocation": "sitemap26.json"
+}

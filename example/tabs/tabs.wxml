@@ -1,0 +1,66 @@
+
+<!--index.wxml-->
+<view class="container">
+  <view class="result">
+    <view class="score1">天线方位角:{{score1}}°</view>
+    <view class="score2">天线俯仰角:{{score2}}°</view>
+    <view class="tip">
+      <view class="shadow-condition">遮挡情况：<text class="">{{shadowCondition}}</text></view>
+    </view>
+  </view>
+  <view class="input-container">
+    <view class="item">
+      <text class="label">站点纬度/LAT(°)</text>
+      <picker mode="selector" value="{{index2}}" range="{{array2}}" bindchange="bindLatPickerChange" class="type_select">
+        <view class="picker">
+          {{array2[index2]}}
+          <text>></text>
+        </view>
+      </picker>
+      <input type="digit" value="{{Lat}}" bindinput="LatInput" placeholder='纬度'name='LAT' maxlength="6" class="" />
+    </view>
+    <view class="item">
+      <text class="label">站点经度/LON(°)</text>
+      <picker mode="selector" value="{{index3}}" range="{{array3}}" bindchange="bindLonPickerChange" class="type_select">
+        <view class="picker">
+          {{array3[index3]}}
+          <text>></text>
+        </view>
+      </picker>
+      <input type="digit" value="{{Lon}}" bindinput="LonInput" placeholder='经度' name='LON' maxlength="6" class="" />
+    </view>
+
+    <view class="item">
+      <text class="label">输入船首向(°)</text>
+      <input type="digit" bindinput="ShipHead_direction" placeholder='船首向' name='ShipHead' maxlength="6" class="" />      
+    </view>
+
+    <view class="item1">
+    <text class="label">输入相对遮挡范围(°)</text>
+     <view style="display:flex;">
+      <input type="digit" bindinput="a1" placeholder='左范围' maxlength="6" class="" />
+      <input type="digit" bindinput="a2" placeholder='右范围' maxlength="6" class="" />
+     </view>
+    </view>
+
+    <view class="item no-border">
+      <text class="label">对星</text>
+      <picker mode="selector" value="{{index1}}" range="{{array1}}" bindchange="bindSatPickerChange" class="type_select">
+        <view class="picker">
+          {{array1[index1]}}
+          <text>></text>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="button">
+     <view style="display:flex;">
+      <button class="get_location" bindtap="getLocation">获取位置信息</button>
+      <button class="calcu_btn" bindtap="calculateBtn">开始计算</button>
+     </view>
+  </view>
+  <view class="location_result">
+    <view class="location_lat">当前纬度:{{location_lat}}°</view>
+    <view class="location_lon">当前经度:{{location_lon}}°</view>
+  </view>
+</view>

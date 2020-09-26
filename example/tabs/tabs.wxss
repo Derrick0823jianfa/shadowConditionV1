@@ -1,0 +1,170 @@
+/**index.wxss**/
+.result{
+    width:100%;
+    background-color: #4b66ed;
+  }
+  
+  .result .title{
+    padding: 0 40rpx;
+    font-size: 80rpx;
+    padding-top:10rpx;
+    color: #000000;
+    font-weight:400;
+  }
+  
+  .result .score1{
+    padding: 0 40rpx;
+    line-height: 100rpx;
+    font-size: 35rpx;
+    color: #fff;
+    font-weight:400;
+  }
+  .result .score2{
+    padding: 0 40rpx;
+    line-height: 100rpx;
+    font-size: 35rpx;
+    color: #fff;
+    font-weight:400;
+  }
+  
+   .tip{
+     display: flex;
+   }
+  
+   .tip view{
+     height: 100rpx;
+     line-height: 100rpx;
+     color: #f1eaea;
+     font-size: 35rpx;
+     background-color:#4b66ed;
+     padding: 0 40rpx;
+     flex: 1;
+     text-align: left;
+   }
+  
+   .tip view text{
+     color: rgb(255, 0, 0);
+     font-size: 50rpx;
+   }
+  
+   .shadow-condition{
+      margin: 0 10 0 0;
+      line-height: 200rpx;
+      font-size: 50rpx;
+   }
+  
+  .input-container {
+     padding: 0 20rpx;
+  }
+  .item {
+    border-bottom: 1px solid #e2e2e2;
+    height:60rpx;
+    line-height: 60rpx;
+    font-size:30rpx;
+    padding: 20rpx 0rpx 20rpx;
+    color: #000000;
+  }
+  
+  .item .label{
+    float: left;
+    vertical-align: center;
+    font-size: 35rpx;
+  }
+  
+  .item input{
+    margin-left: 300rpx;
+    height:50rpx;
+    width: 180rpx;
+    border: 1rpx solid #171616;
+    border-radius: 6rpx;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding-right: 8rpx;
+    color:#4b66ed;
+  
+  }
+  
+  .item .type_select{
+    float: right;
+    font-size: 35rpx;
+  }
+  
+  .item .type_select text{
+    margin-left: 8rpx;
+  }
+  
+  .item1 {
+    border-bottom: 1px solid #e2e2e2;
+    height:60rpx;
+    line-height: 60rpx;
+    font-size:30rpx;
+    padding: 20rpx 0rpx 20rpx;
+    color: #000000;
+  }
+  
+  .item1 .label{
+    float: left;
+    vertical-align: center;
+    font-size: 35rpx;
+  }
+  
+  .item1 input{
+    margin-left: 50rpx;
+    height:50rpx;
+    width: 150rpx;
+    border: 1rpx solid #171616;
+    border-radius: 6rpx;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding-right: 8rpx;
+    color:#4b66ed;
+  
+  }
+  
+  .no-border{
+    border-bottom: 80px;
+    margin-top: 20rpx;
+  }
+  .button {
+    padding: 0 20rpx;
+  }
+  
+  .get_location {
+    background-color: #4b66ed;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 32rpx;
+  
+  }
+  .calcu_btn {
+    background-color: #4b66ed;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 32rpx;
+  }
+  .location_result{
+    border-top: 200rpx;
+    width:100%;
+    
+  }
+  
+  .location_result .location_lat{
+    padding: 0 40rpx;
+    line-height: 100rpx;
+    font-size: 35rpx;
+    color: rgb(1, 1, 1);
+    font-weight:400;
+    border-bottom: 1px solid #e2e2e2;
+  }
+  .location_result .location_lon{
+    padding: 0 40rpx;
+    line-height: 100rpx;
+    font-size: 35rpx;
+    color: rgb(0, 0, 0);
+    font-weight:400;
+    border-bottom: 1px solid #e2e2e2;
+  }
+  
+  
+  
+  
