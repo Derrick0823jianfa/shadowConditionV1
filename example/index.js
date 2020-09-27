@@ -5,7 +5,7 @@ Page({
                 id: 'tool',
                 name: '卫星计算工具',
                 open: false,
-                pages: ['emoji', 'index-list', 'tabs', 'vtabs', 'sticky', 'select-text']
+                pages: ['satellite-calculation']
             },
             {
                 id: 'widget',
